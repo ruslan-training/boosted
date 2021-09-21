@@ -305,7 +305,7 @@ h2 {
   border: 1px solid rgb(100, 100, 100);
   border-radius: 25px;
   overflow: auto;
-  transition: all .2s ease
+  transition: all .2s ease;
 }
 .slide__name a {
   font-size: 14px;
@@ -384,4 +384,53 @@ h2 {
   max-width: 270px;
   width: 100%;
   text-align: center;
+}
+.footer {
+  background: #F7F7F7;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 130px;
+}
+.footer-logo img {
+  width: 100%;
+}
+.footer-logo {
+  max-width: 160px;
+  width: 100%;
+}
+.explore, .about {
+  display: flex;
+  flex-direction: column;
+
+}
+.explore__title {
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.explore__link {
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+.about__title {
+  font-size: 19px;
+  line-height: 30px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.about__text {
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  max-width: 370px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.about__adress {
+  font-size: 13px;
+  line-height: 21px;
+  color: #000000;
 }
