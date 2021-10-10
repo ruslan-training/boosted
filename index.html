@@ -67,8 +67,12 @@
         The Holy Grail of Electric Skateboards and One REVolutionary Scooter
       </div>
       <div class="header-buttons">
-          <button class="btn">boosted revs</button>
-          <button class="btn">boosted boards</button>
+          <div class="header-button _revs">
+            <button class="btn">boosted revs</button>
+          </div>  
+          <div class="header-button _boards">
+            <button class="btn">boosted boards</button>
+          </div>  
       </div>
     </div> 
   </div>  
@@ -145,12 +149,16 @@
     <div class="review">
       <div class="container">
         <div class="review-body">
-          <a href="#" class="review-link">
-            <img src="img/03.png" alt="">
-          </a>
-          <a href="#" class="review-link">
-            <img src="img/04.png" alt="">
-          </a>
+          <div class="review-link">
+            <a href="#">
+              <img src="img/03.png" alt="">
+            </a>
+          </div>  
+          <div class="review-link">
+            <a href="#">
+              <img src="img/04.png" alt="">
+            </a>
+          </div>  
           <div class="review-box">
             <div class="review-box__title">
               Boosted Rev
@@ -219,87 +227,81 @@
       <div class="acc-title">Looking for Accessories?</div>
       <hr class="line bottom-line" />
       <div class="slider-wrapper">
-        <button id="prev-btn" class="prev">
-          <img src="img/shop/01.svg" alt="">
-        </button>
-        <button id="next-btn" class="next">
-          <img src="img/shop/02.svg" alt="">
-        </button>
-        <div class="slides">
-          <div class="slide">
-            <a href="" class="slide__icon">
-              <img src="img/shop/01.png" alt="" class="slide-img">
+        <div class="slider">
+          <div class="slider-item">
+            <a href="" class="slider-item__icon">
+              <img src="img/shop/01.png" alt="" class="slider-item__img">
             </a>
-            <div class="slide__name">
+            <div class="slider-item__name">
               <a href="#">Rev Tube</a>
             </div>
-            <div class="slide__price">
+            <div class="slider-item__price">
               $16.00
             </div>
           </div>
-          <div class="slide">
-            <a href="#" class="slide__icon">
-              <img src="img/shop/02.png" alt="" class="slide-img">
+          <div class="slider-item">
+            <a href="" class="slider-item__icon">
+              <img src="img/shop/02.png" alt="" class="slider-item__img">
             </a>
-            <div class="slide__name">
+            <div class="slider-item__name">
               <a href="#">Boosted Rev Stem Catch</a>
             </div>
-            <div class="slide__price">
+            <div class="slider-item__price">
               $19.00
             </div>
           </div>
-          <div class="slide">
-            <a href="#" class="slide__icon">
-              <img src="img/shop/03.png" alt="" class="slide-img">
+          <div class="slider-item">
+            <a href="" class="slider-item__icon">
+              <img src="img/shop/03.png" alt="" class="slider-item__img">
             </a>
-            <div class="slide__name">
+            <div class="slider-item__name">
               <a href="#">Stomp Brake Fender</a>
             </div>
-            <div class="slide__price">
+            <div class="slider-item__price">
               Sold Out
             </div>
           </div>
-          <div class="slide">
-            <a href="#" class="slide__icon">
-              <img src="img/shop/04.png" alt="" class="slide-img">
+          <div class="slider-item">
+            <a href="" class="slider-item__icon">
+              <img src="img/shop/04.png" alt="" class="slider-item__img">
             </a>
-            <div class="slide__name">
+            <div class="slider-item__name">
               <a href="#">Boosted Belt Kit</a>
             </div>
-            <div class="slide__price">
+            <div class="slider-item__price">
               $25.00
             </div>
           </div>
-          <div class="slide">
-            <a href="#" class="slide__icon">
-              <img src="img/shop/05.png" alt="" class="slide-img">
+          <div class="slider-item">
+            <a href="" class="slider-item__icon">
+              <img src="img/shop/05.png" alt="" class="slider-item__img">
             </a>
-            <div class="slide__name">
+            <div class="slider-item__name">
               <a href="#">Bearing Service Kit</a>
             </div>
-            <div class="slide__price">
+            <div class="slider-item__price">
               $50.00
             </div>
           </div>
-          <div class="slide">
-            <a href="#" class="slide__icon">
-              <img src="img/shop/06.png" alt="" class="slide-img">
+          <div class="slider-item">
+            <a href="" class="slider-item__icon">
+              <img src="img/shop/06.png" alt="" class="slider-item__img">
             </a>
-            <div class="slide__name">
+            <div class="slider-item__name">
               <a href="#">Belt Upgrade Kit</a>
             </div>
-            <div class="slide__price">
+            <div class="slider-item__price">
               $75.00
             </div>
           </div>
-          <div class="slide">
-            <a href="#" class="slide__icon">
-              <img src="img/shop/07.png" alt="" class="slide-img">
+          <div class="slider-item">
+            <a href="" class="slider-item__icon">
+              <img src="img/shop/07.png" alt="" class="slider-item__img">
             </a>
-            <div class="slide__name">
+            <div class="slider-item__name">
               <a href="#">Boosted Skid Plates</a>
             </div>
-            <div class="slide__price">
+            <div class="slider-item__price">
               $20.00
             </div>
           </div>
@@ -353,9 +355,11 @@
       </div>
     </div>
     <div class="footer">
-        <a class="footer-logo" href="#">
+      <div class="footer-logo">
+        <a class="footer-link" href="#">
           <img src="img/foter-logo.svg" alt="">
         </a>
+      </div>  
       <div class="explore">
         <div class="explore__title">explore</div>
         <a href="#" class="explore__link">Electric Skateboards</a>
@@ -377,6 +381,8 @@
     </div>
   </div> 
 </div>    
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="slick.min.js"></script>
 <script src="script.js"></script>    
 </body>
 </html>

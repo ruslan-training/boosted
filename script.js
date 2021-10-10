@@ -1,36 +1,69 @@
-const prev = document.getElementById('prev-btn'),
-      next = document.getElementById('next-btn'),
-      slides = document.querySelectorAll('.slide');
+let burger = document.querySelector('.head-burger'),
+    adaptiveMenu = document.querySelector('.head-menu');
 
-let index = 0;
+    burger.addEventListener('click', function(){
+        burger.classList.toggle('_active'),
+        adaptiveMenu.classList.toggle('_active');
+        
+    });
 
-const activeSlide = n => {
-    console.log(n);
-    for(slide of slides) {
-        slide.classList.remove('active');
-    }
-    slides[n].classList.add('active');
-}
+$(document).ready(function(){
+    $('.slider').slick({
+        arrows: true,
+        adaptiveHeight: false,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        infinite: true,
+        speed: 500,
+        initialSlide: 3,
+        // autoplay: true,
+        // autoplaySpeed: 700,
+        pauseonHover: true,
+        pauseonActive: true,
+        // variableWidth: true,
+        waitForAnimate: false,
+        centerMode: true,
+        responsive: [
+            {
+                breakpoint: 900,
+                settings:{
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings:{
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 500,
+                settings:{
+                    slidesToShow: 1,
+                    variableWidth: true,
+                }
+            }
+        ]
 
-const nextSlide = () => {
-    if(index == slides.length - 1) {
-        index = 0;
-        activeSlide(index);
-    } else {
-        index++;
-        activeSlide(index);
-    }
-}
-next.addEventListener('click', nextSlide);
-
-const prevSlide = () => {
-    if(index == 0) {
-        index = slides.length - 1;
-        activeSlide(index);
-    } else {
-        index--;
-        activeSlide(index);
-    }
-}
-prev.addEventListener('click', prevSlide);
-
+    });
+    // $('.adv-box').slick('setPosition');
+    $('.adv-box').slick({
+        responsive: [
+            {
+                breakpoint: 5000,
+                settings: 'unslick'
+            },
+            {
+                breakpoint: 840,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: true,
+                    adaptiveHeight: true,
+    
+                }
+            }
+        ]
+    });
+    
+});
