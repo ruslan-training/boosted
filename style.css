@@ -80,7 +80,7 @@ body._lock {
   flex-direction: column;
   align-items: center;
   background: url(img/bg.png) center / cover no-repeat;
-  height: 670px;
+  height: 760px;
 }
 .header-buttons {
   display: flex;
