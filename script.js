@@ -13,47 +13,47 @@ let burger = document.querySelector('.head-burger'),
         }
     });
 
-$(document).ready(function(){
-    $('.adv-box').slick({
-        arrows: true,
-        adaptiveHeight: false,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        infinite: true,
-        speed: 500,
-        waitForAnimate: false,
-        responsive: [
-            {
-                breakpoint: 2000,
-                settings: 'unslick'
-            },
-            {
-                breakpoint: 1440,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    arrows: true,
-                }
-            },
-            {
-                breakpoint: 840,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    arrows: true,
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    arrows: true,
-                    infinite: true,
-                }
-            }
-        ]
-    });
+// $(document).ready(function(){
+//     $('.adv-box').slick({
+//         arrows: true,
+//         adaptiveHeight: false,
+//         slidesToShow: 3,
+//         slidesToScroll: 1,
+//         infinite: true,
+//         speed: 500,
+//         waitForAnimate: false,
+//         responsive: [
+//             {
+//                 breakpoint: 2000,
+//                 settings: 'unslick'
+//             },
+//             {
+//                 breakpoint: 1440,
+//                 settings: {
+//                     slidesToShow: 3,
+//                     slidesToScroll: 1,
+//                     arrows: true,
+//                 }
+//             },
+//             {
+//                 breakpoint: 840,
+//                 settings: {
+//                     slidesToShow: 2,
+//                     slidesToScroll: 1,
+//                     arrows: true,
+//                 }
+//             },
+//             {
+//                 breakpoint: 600,
+//                 settings: {
+//                     slidesToShow: 1,
+//                     slidesToScroll: 1,
+//                     arrows: true,
+//                     infinite: true,
+//                 }
+//             }
+//         ]
+//     });
     $('.slider').slick({
         arrows: true,
         adaptiveHeight: false,
