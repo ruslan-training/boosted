@@ -254,18 +254,18 @@ h2 {
 .btn-short {
   padding: 5px 16px;
 }
-.adv-box {
+.slider-tripple-box {
   margin: 0 0 50px 0;
 }
-.adv-box__el {
+.slider-tripple-box__el {
   margin: 0 10px;
   position: relative;
 }
-.adv-box__el img {
+.slider-tripple-box__el img {
   width: 100%;
   height: 100%;
 }
-.adv-layer {
+.slider-tripple-layer {
   position: absolute;
   text-align: center;
   top: 50%;
@@ -274,19 +274,19 @@ h2 {
   max-width: 240px;
   width: 100%;
 }
-.adv-layer__title a {
+.slider-tripple-layer__title a {
   font-size: 25px;
   line-height: 30px;
   color: #FFFFFF;
   transition: all .2s ease;
 }
-.adv-layer__text a {
+.slider-tripple-layer__text a {
   font-size: 18px;
   line-height: 23px;
   color: #FFFFFF;
   transition: all .2s ease;
 }
-.adv-layer__text a:hover, .adv-layer__title a:hover {
+.slider-tripple-layer__text a:hover, .slider-tripple-layer__title a:hover {
   text-decoration: underline;
   transition: all .2s ease;
 }
@@ -303,10 +303,10 @@ h2 {
   overflow: hidden;
 }
 /* SLIDER */
-.adv-box {
+.slider-tripple-box {
   position: relative;
 }
-.adv-box .slick-arrow {
+.slider-tripple-box .slick-arrow {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -317,22 +317,22 @@ h2 {
   font-size: 0;
   transition: all 0.4s ease;
 }
-.adv-box .slick-prev {
+.slider-tripple-box .slick-prev {
   background: url(img/shop/01.svg) 0 0 / 100% no-repeat;
   left: 25px;
 }
-.adv-box .slick-next {
+.slider-tripple-box .slick-next {
   background: url(img/shop/02.svg) 0 0 / 100% no-repeat;
   right: 25px;
 }
-.adv-box .slick-arrow:hover {
+.slider-tripple-box .slick-arrow:hover {
   transform: scale(1.2);
   transition: all 0.4s ease;
 }
-.adv-img {
+.slider-tripple-img {
   height: 410px;
 }
-.adv-img img {
+.slider-tripple-img img {
   object-fit: cover;
 }
 /* END slider */
@@ -755,7 +755,7 @@ h2 {
   .review-link:last-child {
     max-width: 300px;
   }
-  .adv-img {
+  .slider-tripple-img {
     height: 350px;
   }
   .footer {
@@ -827,7 +827,7 @@ h2 {
   .perfomance-title {
     font-size: 28px;
   }
-  .adv-box .slick-arrow {
+  .slider-tripple-box .slick-arrow {
     width: 40px;
     height: 40px;
     top: 80%;

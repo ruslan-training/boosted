@@ -15,7 +15,7 @@ let burger = document.querySelector('.head-burger'),
 
 $(document).ready(function() {
 
-    $('.adv-box').slick({
+    $('.slider-tripple-box').slick({
         arrows: true,
         adaptiveHeight: true,
         slidesToShow: 3,
