@@ -13,7 +13,7 @@ let burger = document.querySelector('.head-burger'),
         }
     });
 
-// $(document).ready(function(){
+$(document).ready(function(){
 //     $('.adv-box').slick({
 //         arrows: true,
 //         adaptiveHeight: false,
@@ -90,7 +90,5 @@ let burger = document.querySelector('.head-burger'),
                 }
             }
         ]
-
     });  
-    $('.adv-box, .slider').slick('setPosition');
 });
