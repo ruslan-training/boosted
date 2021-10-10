@@ -12,6 +12,9 @@ body {
   font-size: 15px;
   color: #FFF;
 }
+body._lock {
+  overflow: hidden;
+}
 
 .container {
   width: 1180px;
@@ -609,6 +612,10 @@ h2 {
     width: 30px;
     height: 20px;
   }
+  .head-burger._active {
+    z-index: 1;
+    position: relative;
+  }
   .head-burger::after, .head-burger::before {
     content: '';
     width: 30px;
@@ -634,10 +641,52 @@ h2 {
   }
   .head-menu {
     position: fixed;
+    left: 0;
     top: -100%;
+    padding: 100px 0 0 25px;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    transition: all .6s ease;
   }
   .head-menu._active {
+    left: 0;
     top: 0;
+    transition: all .6s ease;
+  }
+  .list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .list-el {
+    transform: translate(-150%, 0px);
+    margin-bottom: 20px;
+  }
+  .list-el a {
+    font-size: 20px;
+  }
+  .list-el._active:nth-child(1) {
+    transform: translate(0px, 0px);
+    transition: all .4s ease 0.6s;
+  }
+  .list-el._active:nth-child(2) {
+    transform: translate(0px, 0px);
+    transition: all .4s ease 0.8s;
+  }
+  .list-el._active:nth-child(3) {
+    transform: translate(0px, 0px);
+    transition: all .4s ease 1s;
+  }
+  .list-el._active:nth-child(4) {
+    transform: translate(0px, 0px);
+    transition: all .4s ease 1.2s;
+  }
+  .list-el._active:nth-child(5) {
+    transform: translate(0px, 0px);
+    transition: all .4s ease 1.4s;
+  }
+  .logo {
+    z-index: 11;
   }
   .user-icons {
     display: none;

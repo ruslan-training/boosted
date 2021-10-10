@@ -1,10 +1,16 @@
 let burger = document.querySelector('.head-burger'),
-    adaptiveMenu = document.querySelector('.head-menu');
+    adaptiveMenu = document.querySelector('.head-menu'),
+    body = document.body,
+    list = document.querySelectorAll('.list-el');
 
     burger.addEventListener('click', function(){
         burger.classList.toggle('_active'),
-        adaptiveMenu.classList.toggle('_active');
+        adaptiveMenu.classList.toggle('_active'),
+        body.classList.toggle('_lock');  
         
+        for(listEl of list) {
+            listEl.classList.toggle('_active');
+        }
     });
 
 $(document).ready(function(){
