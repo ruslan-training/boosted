@@ -567,6 +567,7 @@ h2 {
   }
   .review-link  {
     order: 2;
+    margin-bottom: 25px;
   }
   .review-box {
     text-align: center;
