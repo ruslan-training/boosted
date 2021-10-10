@@ -25,6 +25,10 @@ $(document).ready(function(){
         responsive: [
             {
                 breakpoint: 2000,
+                settings: 'unslick'
+            },
+            {
+                breakpoint: 1440,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
