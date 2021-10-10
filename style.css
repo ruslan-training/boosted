@@ -256,9 +256,6 @@ h2 {
 }
 .adv-box {
   margin: 0 0 50px 0;
-}.adv-box {
-  display: flex;
-  justify-content: center;
 }
 .adv-box__el {
   margin: 0 10px;
