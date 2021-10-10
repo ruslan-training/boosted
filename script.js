@@ -14,6 +14,36 @@ let burger = document.querySelector('.head-burger'),
     });
 
 $(document).ready(function(){
+    $('.adv-box').slick({
+        arrows: true,
+        adaptiveHeight: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        speed: 500,
+        responsive: [
+            {
+                breakpoint: 840,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    arrows: true,
+                    adaptiveHeight: false,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: true,
+                    adaptiveHeight: false,
+                    infinite: true,
+                }
+            }
+        ]
+    });
     $('.slider').slick({
         arrows: true,
         adaptiveHeight: false,
@@ -51,25 +81,5 @@ $(document).ready(function(){
             }
         ]
 
-    });
-    // $('.adv-box').slick('setPosition');
-    $('.adv-box').slick({
-        responsive: [
-            {
-                breakpoint: 5000,
-                settings: 'unslick'
-            },
-            {
-                breakpoint: 840,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    arrows: true,
-                    adaptiveHeight: true,
-    
-                }
-            }
-        ]
-    });
-    
+    });  
 });
